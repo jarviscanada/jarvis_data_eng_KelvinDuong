@@ -82,33 +82,20 @@ highlighted_projects:
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
   #Write your Jarvis role as a professional experience rather than training.
-  - title: "Software Developer"
+  - title: "Applications and Data Engineer"
     company: "Jarvis"
-    duration: "2020-present"
+    duration: "2021-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-
+ 
 #List of edcuation
 education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
+  - school_name: "University of Toronto Scarborough"
+    duration: "2015-2020"
+    degree: "Honours Bachelor of Science"
+    department: "Computer Science"
     # optional
-    awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
-
+    awards_achievements:
 #Optional section
 others:
     #category

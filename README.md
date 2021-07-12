@@ -42,18 +42,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KelvinDuon
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
-
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Applications and Data Engineer, Jarvis (2021-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**University of Toronto Scarborough (2015-2020)**, Honours Bachelor of Science, Computer Science
 
 
 ## Miscellaneous
