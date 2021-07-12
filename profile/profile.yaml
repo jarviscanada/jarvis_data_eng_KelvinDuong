@@ -13,21 +13,25 @@ skills:
   # At least 5 skills
   proficient:
     - Java
+    - Python
+    - C
     - Linux/Bash
     - RDBMS/SQL
     - Agile/Scrum
     - Git
+    - SVN
   # At least 5 skills
   competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
+    - Javascript
+    - HTML/CSS
+    - Bootstrap
+    - Express
+    - Node.js
+    - MongoDB
   # At least 5 skills
   familiar:
-    - Donec
-    - fermentum
+    - Haskell
+    - Jira
     - fermentum
     - fermentum
     - fermentum
