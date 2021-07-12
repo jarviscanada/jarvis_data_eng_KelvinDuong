@@ -1,6 +1,6 @@
 # Kelvin Duong . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+I graduated recently from the University of Toronto Scarborough with an Honours Bachelor of Science degree in Computer Science. TODO
 
 ## Skills
 
@@ -8,14 +8,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac
 
 **Competent:** Javascript, HTML/CSS, Bootstrap, Express, Node.js, MongoDB
 
-**Familiar:** Haskell, Jira, fermentum, fermentum, fermentum
+**Familiar:** Haskell, Jira, C#, fermentum, fermentum
 
 ## Jarvis Projects
 
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong](https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong/tree/master/linux_sql)]: Not started
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong/tree/master/core_java)]:
       
