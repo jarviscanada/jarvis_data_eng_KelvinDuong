@@ -4,11 +4,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Python, C, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, SVN
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** Javascript, HTML/CSS, Bootstrap, Express, Node.js, MongoDB
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** Haskell, Jira, fermentum, fermentum, fermentum
 
 ## Jarvis Projects
 
