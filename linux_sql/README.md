@@ -1,5 +1,5 @@
 # Introduction
-Developed a cluster monitoring system that records hardware speicifcations and resource usage of each node in the system. TODO
+Developed a cluster monitoring system that records hardware speicifcations and resource usage of each node in the system. Used TODO
 (about 150-200 words)
 Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
 

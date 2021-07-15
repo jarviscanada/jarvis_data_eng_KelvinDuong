@@ -14,7 +14,7 @@ then
   sudo systemctl start docker
 fi
 
-# evaluating commands
+# evaluating arguments
 case $COMAND in
   "create")
       # check if correct number of inputs
