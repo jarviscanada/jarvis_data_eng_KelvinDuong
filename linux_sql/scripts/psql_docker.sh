@@ -7,12 +7,8 @@ PASSSWORD=$3
 INSTANCES=$(docker container ls -a -f name=jrvs-psql | wc -l)
 
 # start docker if it is not already running
-sudo systemctl status docker > /dev/null
-RUNNING=$?
-if [ "$RUNNING" -ne 0 ];
-then
-  sudo systemctl start docker
-fi
+sudo systemctl status docker > /dev/null || sudo systemctl start docker
+
 
 # evaluating given arguments
 case $COMAND in
@@ -71,5 +67,3 @@ case $COMAND in
       exit 1
       ;;
 esac
-
-exit 0
