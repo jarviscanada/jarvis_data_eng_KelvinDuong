@@ -9,7 +9,6 @@ INSTANCES=$(docker container ls -a -f name=jrvs-psql | wc -l)
 # start docker if it is not already running
 sudo systemctl status docker > /dev/null || sudo systemctl start docker
 
-
 # evaluating given arguments
 case $COMAND in
   "create")
