@@ -7,9 +7,9 @@ PASSSWORD=$3
 INSTANCES=$(docker container ls -a -f name=jrvs-psql | wc -l)
 
 # start docker if it is not already running
-sudo systemctl status docker
+sudo systemctl status docker > /dev/null
 RUNNING=$?
-if [ "$RUNNING" != 0 ];
+if [ "$RUNNING" -ne 0 ];
 then
   sudo systemctl start docker
 fi
@@ -17,7 +17,7 @@ fi
 # evaluating given arguments
 case $COMAND in
   "create")
-      # check if correct it is the number of inputs
+      # check if it is the correct number of inputs
       if [ "$#" -ne 3 ];
       then
         echo "Invalid number of arguments"
@@ -25,7 +25,7 @@ case $COMAND in
         exit 1
       fi
 
-      # Check if container is already created
+      # Check if the container is already created
       if [ $INSTANCES -eq 2 ];
       then
         echo "jrvs-psql container already exists"
@@ -39,7 +39,7 @@ case $COMAND in
      ;;
 
   "start")
-      # check if container exists
+      # check if the container exists
       if [ $INSTANCES -ne 2 ];
       then
           echo "jrvs-psql container does not exists"
@@ -52,7 +52,7 @@ case $COMAND in
       ;;
 
   "stop")
-      # check if container exists
+      # check if the container exists
       if [ $INSTANCES -ne 2 ];
       then
           echo "jrvs-psql container does not exists"
