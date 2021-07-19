@@ -26,8 +26,7 @@ L2_cache=$(echo "$lscpu_out"  | egrep "(L2)\s(cache)" | awk '{print $3}' | xargs
 total_mem=$(cat /proc/meminfo | egrep "MemTotal:" | awk '{print $2}' | xargs)
 timestamp=$(echo  $(vmstat -t) | egrep -o "[0-9]{4}-(1[1-2]|0[0-9])-([0-2][0-9]|3[0-1])\s([0-1][0-9]|2[0-4]):([0-5][0-9]):([0-5][0-9])")
 
-# columns timestamp,host_id,memory_free,cpu_idle,cpu_kernel,disk_io,disk_available
-# insert data into host usage table
+# insert hardware data into host_info table
 statement="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp)
            VALUES ('$hostname', $cpu_number, '$cpu_architecture', $cpu_model, $cpu_mhz, $L2_cache, $total_mem, '$timestamp')"
 

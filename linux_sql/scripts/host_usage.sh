@@ -27,8 +27,7 @@ cpu_kernel=$(echo "$(vmstat -t)" | awk '{print $14}' | sed -n 3p)
 disk_io=$(echo "$(vmstat -d)" | awk '{print $10}' | sed -n 3p)
 disk_available=$(echo "$memory_usage" | awk '{print $4}'| sed -n 2p | sed 's/.$//')
 
-# columns timestamp,host_id,memory_free,cpu_idle,cpu_kernel,disk_io,disk_available
-# insert data into host usage table
+# insert usage data into host_usage table
 statement="INSERT INTO host_usage (timestamp, host_id, memory_free, cpu_idle, cpu_kernel, disk_io, disk_available)
            VALUES ('$timestamp', (SELECT id FROM host_info WHERE hostname='$hostname'), $memory_free, $cpu_idle, $cpu_kernel, $disk_io, $disk_available)"
 
