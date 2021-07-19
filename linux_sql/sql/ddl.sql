@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS host_usage
         disk_available  INTEGER NOT NULL
     );
 
+-- hardware info table
 CREATE TABLE IF NOT EXISTS host_info
     (
         id                  SERIAL NOT NULL PRIMARY KEY,
