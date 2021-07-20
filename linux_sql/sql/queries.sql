@@ -49,4 +49,3 @@ HAVING
 ORDER BY
     host_id,
     tstamp;
-
