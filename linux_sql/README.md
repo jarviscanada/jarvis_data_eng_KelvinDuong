@@ -1,8 +1,5 @@
 # Introduction
-Developed a cluster monitoring system that records hardware speicifcations and resource usage of each node in the system. The script assists the Jarvis Linux Cluster Administration team TODO
-(about 150-200 words)
-Discuss the design of the project. What does this project/product do? Who are the users? What are the technologies you have used? (e.g. bash, docker, git, etc..)
-
+Developed a cluster monitoring system that records hardware specifications and resource usage of each node/server in the system. The script is used by the Jarvis Linux Cluster Administration (LCA) team to monitor and manage their Linux cluster which is currently running on CentOS 7. The data is collected from the host machine every minute using crontab and is stored on a Relational Database Management System using PostgresSQL. Data collected include CPU mode, memory free, disk io, CPU number, etc. A few SQL queries were written to answer basic business questions. The queries can find the average memory used for each host over a specified time interval and detect server failures. Bash scripts are used to create, stop or start the PSQL Docker instance and to insert into the database. Used git as a version control system and followed the GitFlow workflow ideologies to manage branches and features. 
 # Quick Start
 Use markdown code block for your quick-start commands
 - Start a psql instance using psql_docker.sh
