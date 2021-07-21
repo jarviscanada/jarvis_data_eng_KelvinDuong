@@ -2,12 +2,18 @@
 Developed a cluster monitoring system that records hardware specifications and resource usage of each node/server in the system. The script is used by the Jarvis Linux Cluster Administration (LCA) team to monitor and manage their Linux cluster which is currently running on CentOS 7. The data is collected from the host machine every minute using crontab and is stored on a Relational Database Management System using PostgresSQL. Data collected include CPU mode, memory free, disk io, CPU number, etc. A few SQL queries were written to answer basic business questions. The queries can find the average memory used for each host over a specified time interval and detect server failures. Bash scripts are used to create, stop or start the PSQL Docker instance and to insert into the database. Used git as a version control system and followed the GitFlow workflow ideologies to manage branches and features. 
 
 # Quick Start
-- Start a psql instance using psql_docker.sh
+- Start a psql instance using `psql_docker.sh`
 ````bash
-./scripts/psql_docker.sh create [db_username] [db_password]
+    ./scripts/psql_docker.sh create [db_username] [db_password]
 ````
-- Create tables using ddl.sql
+- Create hardware usage and hardware specifications tables using `ddl.sql`
+````bash 
+    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+````
 - Insert hardware specs data into the DB using host_info.sh
+````bash 
+    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+```` 
 - Insert hardware usage data into the DB using host_usage.sh
 - Crontab setup
 
