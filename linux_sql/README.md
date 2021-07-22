@@ -62,18 +62,34 @@ Developed a cluster monitoring system that records hardware specifications and r
 
 ## Database Modeling
 Describe the schema of each table using markdown table syntax (do not put any sql code)
-- `host_info`
-- `host_usage`
+Table: `host_info`
+Column | Type | Description 
+--------------|------|--------------
+id | `SERIAL PK` | Primary Key: Automatically incremented unique identifier for a host
+hostname | `VARCHAR` | Name of the host
+cpu_number | `INTEGER` | Number of CPUs in the server
+cpu_architecture | `VARCHAR` | Architecture of the CPU
+cpu_model | `VARCHAR` | Model of the CPU
+cpu_mhz | `REAL` | Clock speed of the CPU
+L2_cache | `INTEGER` | Storage size of the L2 Cache
+total_mem | `INTEGER` | Total memory of the machine
+timestamp | `TIMESTAMP` | Timestamp of when host_info.sh was executed
+
+Table: `host_usage`
+Column | Type | Description 
+--------------|------|--------------
+timestamp | `TIMESTAMP` | Timestamp of when host_usage.sh was executed
+host_id | `INTEGER` | The id of the host found in the host_info table
+memory_free | `INTEGER` | Amount of memory not being used
+cpu_idle | `INTEGER` | Percentage of the CPU that is in idle
+cpu_kernel | ` INTEGER ` | Percentage of CPU usage for the kernel 
+disk_io | `INTEGER` | Number of disk I/O
+disk_available | `INTEGER` | Available disk space of the root directory
 
 # Test
-How did you test your bash scripts and SQL queries? What was the result?
-
-# Deployment
-How did you deploy your app? (e.g. Github for SCM and docker for PSQL)
+Inserted mock data into the database for testing the bash scripts. Manually tested `host_info.sh` and `host_usage.sh` by executing the code on the mock database and comparing results. Results were as expected. The `ddl.sql` script was tested by executing it in the terminal and checking if the tables were created with the correct columns. `queries.sql` was tested by running it on the mock data and comparing it with the expected results. All tests were successful. 
 
 # Improvements
-Write at least three things you want to improve 
-e.g. 
-- handle hardware update 
-- blah
-- blah
+- Implement error checking for host_info. It should check for duplicates.
+- Automatically delete rows from the host_usage table when it has been over a specified time. Currently, it gets too large too quickly and becomes hard for a user to read.
+- Automatically create a report at the end of the day to summarize the host_usage table.
