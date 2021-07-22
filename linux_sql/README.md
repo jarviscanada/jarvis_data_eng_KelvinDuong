@@ -33,7 +33,7 @@ Developed a cluster monitoring system that records hardware specifications and r
 - Implemented `host_info.sh` and `host_usage.sh` bash scripts for finding the hardware specification and usage data
 - Wrote queries that answer basic business questions in `queries.sql`
 ## Architecture
-![Architecture](assets/Architecture.jpeg)
+![Architecture](assets/Architecture.jpg)
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
 - psql_docker.sh
