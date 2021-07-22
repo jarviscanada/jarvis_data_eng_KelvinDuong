@@ -44,7 +44,7 @@ Developed a cluster monitoring system that records hardware specifications and r
     ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
 ```
 - `host_usage.sh` adds the host machines usage into the host_usage table
-l```
+```
     ./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
 ```
 - `crontab` is used to continously run the script in specified intervals
