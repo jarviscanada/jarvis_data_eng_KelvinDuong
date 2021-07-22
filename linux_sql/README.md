@@ -6,22 +6,34 @@ Developed a cluster monitoring system that records hardware specifications and r
 ````bash
     ./scripts/psql_docker.sh create [db_username] [db_password]
 ````
-- Create hardware usage and hardware specifications tables using `ddl.sql`
-````bash 
+- Create hardware usage and hardware specifications tables using `ddl.sql`
+````bash
     ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
 ````
-- Insert hardware specs data into the DB using host_info.sh
-````bash 
+- Collect and insert hardware specifications data into the database using `host_info.sh`
+````bash
     ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
 ```` 
-- Insert hardware usage data into the DB using host_usage.sh
+- Collect and insert hardware usage data into the database using `host_usage.sh`
+````bash
+    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+```` 
 - Crontab setup
+````bash
+   # edit crontab file 
+    crontab -e 
+
+    # add the following line to the crontab file 
+    * * * * * bash <your path>/scripts/host_usage.sh localhost 5432 host_agent [db_username] [db_password] > /tmp/host_usage.log 
+```` 
 
 # Implemenation
-Discuss how you implement the project.
+- Implemented the `psql_docker.sh` bash script which sets up a PostgresSQL instance using Docker.
+- Created the host_usage and host_info tables in `ddl.sql`
+- Implemented `host_info.sh` and `host_usage.sh` bash scripts for finding the hardware specification and usage data
+- Wrote queries that answer basic business questions in `queries.sql`
 ## Architecture
-Draw a cluster diagram with three Linux hosts, a DB, and agents (use draw.io website). Image must be saved to the `assets` directory.
-
+![Architecture](./assets/Architecture.jpeg)
 ## Scripts
 Shell script description and usage (use markdown code block for script usage)
 - psql_docker.sh
