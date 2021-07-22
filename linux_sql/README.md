@@ -8,15 +8,15 @@ Developed a cluster monitoring system that records hardware specifications and r
 ````
 - Create hardware usage and hardware specifications tables using `ddl.sql`
 ````bash
-    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+    psql -h localhost -U postgres -d host_agent -f sql/ddl.sql    
 ````
 - Collect and insert hardware specifications data into the database using `host_info.sh`
 ````bash
-    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+    ./scripts/host_info.sh psql_host psql_port db_name psql_usler psql_password 
 ```` 
 - Collect and insert hardware usage data into the database using `host_usage.sh`
 ````bash
-    ./scripts/host_info.sh localhost 5432 host_agent [db_username] [db_password] 
+    ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
 ```` 
 - Crontab setup
 ````bash
@@ -35,12 +35,30 @@ Developed a cluster monitoring system that records hardware specifications and r
 ## Architecture
 ![Architecture](assets/Architecture.jpg)
 ## Scripts
-Shell script description and usage (use markdown code block for script usage)
-- psql_docker.sh
-- host_info.sh
-- host_usage.sh
-- crontab
-- queries.sql (describe what business problem you are trying to resolve)
+- `psql_docker.sh` is used to create, start or stop the psql instance
+```
+    ./scripts/psql_docker.sh start|stop|create [db_username] [db_password]
+```
+- `host_info.sh` adds the host machines specifications into the host_info table
+```
+    ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password
+```
+- `host_usage.sh` adds the host machines usage into the host_usage table
+l```
+    ./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password
+```
+- `crontab` is used to continously run the script in specified intervals
+```
+    # edit crontab file
+    crontab -e
+
+    # add following line to the file
+    * * * * * bash <your path>/host_usage.sh psql_host psql_port db_name psql_user psql_password > /tmp/host_usage.log
+```
+- `queries.sql` contains three queries used by LCA. The first query finds out which host uses the most memory. Second query finds the average memory used for each host every five minutes. The last query detects server/node failure in the system.
+```
+    psql -h localhost -U postgres -d host_agent -f ./sql/queries.sql
+```
 
 ## Database Modeling
 Describe the schema of each table using markdown table syntax (do not put any sql code)
