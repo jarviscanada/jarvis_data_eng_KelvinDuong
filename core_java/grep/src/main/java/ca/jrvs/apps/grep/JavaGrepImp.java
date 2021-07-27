@@ -16,6 +16,36 @@ public class JavaGrepImp implements JavaGrep {
   private String outFile;
 
   @Override
+  public String getRegex() {
+    return regex;
+  }
+
+  @Override
+  public void setRegex(String regex) {
+    this.regex = regex;
+  }
+
+  @Override
+  public String getRootPath() {
+    return rootPath;
+  }
+
+  @Override
+  public void setRootPath(String rootPath) {
+    this.rootPath = rootPath;
+  }
+
+  @Override
+  public String getOutFile() {
+    return outFile;
+  }
+
+  @Override
+  public void setOutFile(String outFile) {
+    this.outFile = outFile;
+  }
+
+  @Override
   public void process() throws IOException {
   }
 
@@ -37,35 +67,6 @@ public class JavaGrepImp implements JavaGrep {
   @Override
   public boolean writeToFile(List<String> lines) throws IOException {
     return false;
-  }
-
-  @Override
-  public String getRootPath() {
-    return null;
-  }
-
-  @Override
-  public void setRootPath(String rootPath) {
-
-  }
-
-  @Override
-  public String getRegex() {
-    return null;
-  }
-
-  @Override
-  public void setRegex(String regex) {
-
-  }
-
-  @Override
-  public String getOutFile() {
-    return null;
-  }
-
-  @Override
-  public void setOutFile(String outFile) {
   }
 
   public static void main(String[] args) {
