@@ -2,9 +2,15 @@ package ca.jrvs.apps.grep;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import org.apache.log4j.BasicConfigurator;
 
 public class JavaGrepImp implements JavaGrep {
@@ -49,19 +55,55 @@ public class JavaGrepImp implements JavaGrep {
   public void process() throws IOException {
   }
 
+  /**
+   * Return a list of all the files in the directory recursively
+   * @param rootDir input directory
+   * @return
+   */
   @Override
   public List<File> listFiles(String rootDir) {
-    return null;
+    List<File> files = new ArrayList<>();
+    File root = new File(rootDir);
+
+    // Get a list of all the files in the directory and check if they are valid
+    File[] fileList = root.listFiles();
+    if (fileList != null) {
+      for (File file: fileList) {
+        // If it is a directory, recursive call on the directory
+        if (file.isDirectory()) {
+          files.addAll(listFiles(file.getAbsolutePath()));
+        } else {
+          files.add(file);
+        }
+      }
+    }
+    return files;
   }
 
   @Override
   public List<String> readLines(File inputFile) throws IllegalArgumentException {
-    return null;
+    List<String> lines = new ArrayList<>();
+
+    // Read lines from the file and add to the list. Catch exception and throw new
+    // IllegalArgumentException when necessary
+    try {
+      BufferedReader reader = new BufferedReader(new FileReader(inputFile));
+      String nextLine = reader.readLine();
+      while(nextLine != null) {
+        lines.add(nextLine);
+        nextLine = reader.readLine();
+      }
+
+      reader.close();
+    } catch (IOException e){
+      logger.error(e.getMessage(), new IllegalArgumentException());
+    }
+    return lines;
   }
 
   @Override
   public boolean containsPattern(String line) {
-    return false;
+    return Pattern.matches(getRegex(), line);
   }
 
   @Override
@@ -85,6 +127,16 @@ public class JavaGrepImp implements JavaGrep {
       javaGrepImp.process();
     } catch (Exception ex) {
       javaGrepImp.logger.error(ex.getMessage(), ex);
+    }
+
+    // Testing part
+    List<File> files = javaGrepImp.listFiles(args[1]);
+    System.out.println(javaGrepImp.readLines(files.get(0)));
+    List<String> lines = javaGrepImp.readLines(files.get(0));
+    for (String line:lines) {
+      if(javaGrepImp.containsPattern(line)) {
+        System.out.println(line);
+      }
     }
   }
 }
