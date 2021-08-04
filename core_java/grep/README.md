@@ -38,7 +38,7 @@ Testing was done manually through the command line and debugger. Created files w
 The application was dockerized and the image was uploaded to Docker Hub publicly. It can be retrieved and ran by a user.
 
 # Improvement
-1.Implement remaining grep option such as case insensitive, number of lines, etc.
-2.Allow different types of outputs. It could show information such as the file name and line number.
-3.An option to display the output in stdout instead of writing to a file
+1.Implement remaining grep option such as case insensitive, number of lines, etc.  
+2.Allow different types of outputs. It could show information such as the file name and line number.  
+3.An option to display the output in stdout instead of writing to a file.  
 
