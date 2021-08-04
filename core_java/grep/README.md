@@ -16,8 +16,7 @@ docker pull kelvin3094/grep
 
 # run docker container
 docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out kelvin3094/grep [regex] [rootDirectory] [outFile]
-```
-		
+```		
 #Implemenation
 ## Pseudocode
 write `process` method pseudocode.
