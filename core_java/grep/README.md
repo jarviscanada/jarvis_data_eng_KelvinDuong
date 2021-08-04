@@ -1,22 +1,6 @@
 # Introduction
 Developed a Java application that mimics the Linux grep command. Given a regex pattern, root directory and output file, the application will recursively check every file in the path for matching lines. The two implementations of the application can be found in the JavaGrepImp and JavaGrepLambdaImp classes. JavaGrepImp uses methods from the Reader class in its implementation to read and write to files. JavaGrepLambdaImp extends and improves on the JavaGrepImp class by making use of Lambda functions wherever possible. The application was Dockerized and uploaded to DockerHub.
 # Quick Start
-1. Run using JAR file
-```
-# build project with maven
-mvn clean package
-
-# run program using JAR file
-java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outFile]
-```
-2. Run using Docker
-```
-# pull image from DockerHub
-docker pull kelvin3094/grep
-
-# run docker container
-docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out kelvin3094/grep [regex] [rootDirectory] [outFile]
-```		
 #Implemenation
 ## Pseudocode
 write `process` method pseudocode.
