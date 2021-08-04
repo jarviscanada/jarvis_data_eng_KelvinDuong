@@ -29,7 +29,7 @@ writeToFile(matchedLines)
 ```
 
 ## Performance Issue
-The application throws an OutOfMemoryError exception when the size of the files being read is larger than the allocated heap size. A solution would be to use Steam APIs and replace List with Buffer or Stream.
+The application throws an OutOfMemoryError exception when the size of the files being read is larger than the allocated heap size. A solution would be to use Steam APIs and to replace List with Buffer or Stream.
 
 # Test
 Testing was done manually through the command line and debugger. Created files with sample data and confirmed that each method gave the correct output. Used the debugger in IntelliJ to run the program line by line and to check if the files were recursively read and retrieved.
