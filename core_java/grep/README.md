@@ -10,8 +10,15 @@ mvn clean package
 java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outFile]
 ```
 2. Run using Docker
+```
+# pull image from DockerHub
+docker pull kelvin3094/grep
 
-#Implemenation
+# run docker container
+docker run --rm -v `pwd`/data:/data -v `pwd`/out:/out kelvin3094/grep [regex] [rootDirectory] [outFile]
+```
+		
+#Implemenationi
 ## Pseudocode
 write `process` method pseudocode.
 
