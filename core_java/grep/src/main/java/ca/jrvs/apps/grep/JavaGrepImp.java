@@ -81,7 +81,7 @@ public class JavaGrepImp implements JavaGrep {
    * @return a list of all files in the directory and its subdirectories
    */
   @Override
-  public List<File> listFiles(String rootDir) {
+  public List<File> listFiles(String rootDir) throws IOException {
     List<File> files = new ArrayList<>();
     File root = new File(rootDir);
 
@@ -123,7 +123,8 @@ public class JavaGrepImp implements JavaGrep {
 
       reader.close();
     } catch (IOException e) {
-      logger.error(e.getMessage(), new IllegalArgumentException());
+      logger.error(e.getMessage() + ": Exception when reading a line");
+      throw new IllegalArgumentException();
     }
     return lines;
   }
@@ -170,7 +171,7 @@ public class JavaGrepImp implements JavaGrep {
     try {
       javaGrepImp.process();
     } catch (Exception ex) {
-      javaGrepImp.logger.error(ex.getMessage(), ex);
+      javaGrepImp.logger.error(ex.getMessage() + ": Process has failed");
     }
   }
 }

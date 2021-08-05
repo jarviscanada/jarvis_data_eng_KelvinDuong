@@ -17,13 +17,14 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     try {
       Files.lines(path).forEach(line -> lines.add(line));
     } catch (Exception e) {
-      logger.error("Unable to read file", new IOException());
+      logger.error(e.getMessage() + ": Unable to read lines from file");
+      throw new IllegalArgumentException();
     }
     return lines;
   }
 
   @Override
-  public List<File> listFiles(String rootDir) {
+  public List<File> listFiles(String rootDir) throws IOException {
     Path path = Paths.get(rootDir);
     List<File> files = new ArrayList<>();
     try {
@@ -31,7 +32,8 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
           .filter(Files::isRegularFile)
           .forEach(file -> files.add(file.toFile()));
     } catch (Exception e) {
-      logger.error("Unable to read directory", new IOException());
+      logger.error(e.getMessage() + ": Unable to read files in directory");
+      throw new RuntimeException();
     }
     return files;
   }
@@ -48,8 +50,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     try {
       javaGrepLambdaImp.process();
     } catch (Exception e) {
-      e.printStackTrace();
-      ;
+      javaGrepLambdaImp.logger.error(e.getMessage() + ": Unable to perform grep command");
     }
   }
 }
