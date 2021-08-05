@@ -17,7 +17,11 @@ public class JDBCExecutor {
       Connection connection = dcm.getConnection();
       OrderDAO orderDAO = new OrderDAO(connection);
       Order order = orderDAO.findById(1000);
+      Order order1 = orderDAO.findById(1001);
+      Order order2 = orderDAO.findById(1002);
       System.out.println(order);
+      System.out.println(order1);
+      System.out.println(order2);
     }catch(SQLException e){
       logger.error(e.getMessage() + "Unable to select order", e);
       throw new RuntimeException();
