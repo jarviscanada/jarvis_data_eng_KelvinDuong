@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class JDBCExecutor {
   final static Logger logger = LoggerFactory.getLogger(JDBCExecutor.class);
 
-  public static void main(String... args){
+  public static void main(String args[]){
     DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost",
         "hplussport", "postgres", "password");
     try{
