@@ -24,7 +24,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
   }
 
   @Override
-  public List<File> listFiles(String rootDir) throws IOException {
+  public List<File> listFiles(String rootDir) throws RuntimeException {
     Path path = Paths.get(rootDir);
     List<File> files = new ArrayList<>();
     try {
