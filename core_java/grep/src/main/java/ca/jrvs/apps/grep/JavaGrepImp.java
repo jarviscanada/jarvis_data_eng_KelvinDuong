@@ -123,7 +123,7 @@ public class JavaGrepImp implements JavaGrep {
 
       reader.close();
     } catch (IOException e) {
-      logger.error(e.getMessage() + ": Exception when reading a line");
+      logger.error(e.getMessage() + ": Exception when reading a line", e);
       throw new IllegalArgumentException();
     }
     return lines;
@@ -170,8 +170,8 @@ public class JavaGrepImp implements JavaGrep {
 
     try {
       javaGrepImp.process();
-    } catch (Exception ex) {
-      javaGrepImp.logger.error(ex.getMessage() + ": Process has failed");
+    } catch (Exception e) {
+      javaGrepImp.logger.error(e.getMessage() + ": Process has failed", e);
     }
   }
 }
