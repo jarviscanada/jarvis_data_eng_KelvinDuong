@@ -3,7 +3,7 @@ Developed a JDBC application that creates a connection in the dockerized Postgre
 
 # Implementaiton
 ## ER Diagram
-![ER_diagram](./assets/ER_diagram.png)
+![ER_diagram](./assets/ER_Diagram.png)
 
 ## Design Patterns
 ### DAO (Data Access Object) Pattern
