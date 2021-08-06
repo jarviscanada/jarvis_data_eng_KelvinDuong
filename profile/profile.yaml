@@ -102,16 +102,7 @@ education:
 
 #Optional section
 others:
-    #category
-  - title: "Certificates"
-    #list of items
-    bullets:
-      - "Udacity Machine Learning (2019)"
-  - title: "Awards"
-    bullets:
-      - "Winner"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
       - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Piano"
