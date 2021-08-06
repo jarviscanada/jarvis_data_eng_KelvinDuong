@@ -16,8 +16,8 @@ skills:
     - Python
     - C
     - Linux/Bash
-    - RDBMS/SQL/MySQL
-    - Agile/Scrum/Kanban
+    - RDBMS/PostgreSQL
+    - Agile/Scrum
     - Git/SVN
   # At least 5 skills
   competent:
@@ -28,6 +28,8 @@ skills:
     - Maven
     - GitFlow
     - Jira
+    - MySQL
+    - Kanban
   # At least 5 skills
   familiar:
     - Spring

@@ -88,7 +88,9 @@
       "Docker",
       "Maven",
       "GitFlow",
-      "Jira"
+      "Jira",
+      "MySQL",
+      "Kanban"
     ],
     "familiar": [
       "Spring",
@@ -104,8 +106,8 @@
       "Python",
       "C",
       "Linux/Bash",
-      "RDBMS/SQL/MySQL",
-      "Agile/Scrum/Kanban",
+      "RDBMS/PostgreSQL",
+      "Agile/Scrum",
       "Git/SVN"
     ]
   },

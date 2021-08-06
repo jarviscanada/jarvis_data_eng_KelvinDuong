@@ -4,9 +4,9 @@ I graduated with a bachelor's degree specializing in Computer Science from the U
 
 ## Skills
 
-**Proficient:** Java, Python, C, Linux/Bash, RDBMS/SQL/MySQL, Agile/Scrum/Kanban, Git/SVN
+**Proficient:** Java, Python, C, Linux/Bash, RDBMS/PostgreSQL, Agile/Scrum, Git/SVN
 
-**Competent:** JavaScript, HTML/CSS, MongoDB, Docker, Maven, GitFlow, Jira
+**Competent:** JavaScript, HTML/CSS, MongoDB, Docker, Maven, GitFlow, Jira, MySQL, Kanban
 
 **Familiar:** Spring, Hibernate, Node.js, Express, Bootstrap, jQuery, Travis CI
 
