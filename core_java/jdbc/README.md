@@ -1,5 +1,5 @@
 # Introduction
-Developed a JDBC application that creates a connection in the dockerized PostgreSQL database and allows the client to access predefined select queries. Maven was used to compile and build the project with the necessary dependencies. 
+Developed a JDBC application that creates a connection in the dockerized PostgreSQL database and allows the client to access predefined select queries. Maven was used to compile and build the project with the necessary dependencies. The OrderDAO class allows users to find orders given a specific id. The query merges the orders table with salesperson and customer.  
 
 # Implementaiton
 ## ER Diagram
