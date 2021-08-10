@@ -28,6 +28,9 @@ public class LinkedJListJDeque<E> implements JDeque<E> {
    */
   @Override
   public boolean add(E e) {
+    if (e == null) {
+      throw new NullPointerException("Element cannot be null");
+    }
     size++;
     return linkedList.add(e);
   }
@@ -77,6 +80,10 @@ public class LinkedJListJDeque<E> implements JDeque<E> {
    */
   @Override
   public void push(E e) {
+    if (e == null) {
+      throw new NullPointerException("Element cannot be null");
+    }
+    size++;
     linkedList.add(e);
   }
 
