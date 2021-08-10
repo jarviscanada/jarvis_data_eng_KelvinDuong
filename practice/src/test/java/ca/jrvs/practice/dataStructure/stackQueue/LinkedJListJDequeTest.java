@@ -29,7 +29,7 @@ public class LinkedJListJDequeTest {
     LinkedJListJDeque deque = new LinkedJListJDeque();
     deque.add("First");
     deque.add("Second");
-    assertEquals("Secibd", deque.pop());
+    assertEquals("Second", deque.pop());
     assertEquals("First", deque.pop());
   }
 
@@ -38,7 +38,7 @@ public class LinkedJListJDequeTest {
     LinkedJListJDeque deque = new LinkedJListJDeque();
     deque.push("First");
     deque.push("Second");
-    assertEquals("Secibd", deque.pop());
+    assertEquals("Second", deque.pop());
     assertEquals("First", deque.pop());
   }
 
