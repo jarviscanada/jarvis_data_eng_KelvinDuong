@@ -12,7 +12,7 @@
   "highlighted_projects": [
     {
       "description": "Collaborated in a Kanban development environment to develop modules and to patch existing bugs in Java. Created a module that allows for the addition of formularies in the MySQL database that is retrieved using Spring. Coordinated the team's efforts using GitHub, Trello, JIRA and daily stand ups. Modeled the structure and behavior of the existing codebase using class, object, and sequence diagrams.",
-      "git_url": "https://github.com/CSCD01/team_11-project",
+      "git_url": null,
       "name": "OpenMRS Patient Management Software"
     },
     {
@@ -75,7 +75,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Worked with a team of Data Engineers in an Agile/Scrum development environment to implement projects in Java and Linux/Bash. Conducted daily scrum meetings as a team lead for one sprint. Designed databases with ER diagrams and implemented them with PostgreSQL. Dockerized applications and uploaded to Docker Hub for use by the public.",
+      "description": "Worked with a team of Data Engineers in an Agile/Scrum development environment to implement projects in Java and Linux/Bash. Conducted daily scrum meetings as a team lead for one sprint. Designed databases with ER diagrams and implemented them with PostgreSQL. Dockerized applications and uploaded to Docker Hub for public use.",
       "duration": "July 2021-present",
       "title": "Data Engineer"
     }

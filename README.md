@@ -35,14 +35,14 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_KelvinDuon
 
 
 ## Highlighted Projects
-**OpenMRS Patient Management Software** [[GitHub](https://github.com/CSCD01/team_11-project)]: Collaborated in a Kanban development environment to develop modules and to patch existing bugs in Java. Created a module that allows for the addition of formularies in the MySQL database that is retrieved using Spring. Coordinated the team's efforts using GitHub, Trello, JIRA and daily stand ups. Modeled the structure and behavior of the existing codebase using class, object, and sequence diagrams.
+**OpenMRS Patient Management Software**: Collaborated in a Kanban development environment to develop modules and to patch existing bugs in Java. Created a module that allows for the addition of formularies in the MySQL database that is retrieved using Spring. Coordinated the team's efforts using GitHub, Trello, JIRA and daily stand ups. Modeled the structure and behavior of the existing codebase using class, object, and sequence diagrams.
 
 **Toronto East Quadrant - Local Immigration Partnership**: Designed MySQL queries that analyzed client service usage and information by merging and retrieving relevant tables. Developed application using JavaScript, HTML and CSS for the front-end and core Java for the back end. Used commonly found design patterns such as factory, singleton, and builder to create maintainable and extensible code. Attended weekly client meetings to discuss design requirements and modifications to the application.
 
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (July 2021-present)**: Worked with a team of Data Engineers in an Agile/Scrum development environment to implement projects in Java and Linux/Bash. Conducted daily scrum meetings as a team lead for one sprint. Designed databases with ER diagrams and implemented them with PostgreSQL. Dockerized applications and uploaded to Docker Hub for use by the public.
+**Data Engineer, Jarvis (July 2021-present)**: Worked with a team of Data Engineers in an Agile/Scrum development environment to implement projects in Java and Linux/Bash. Conducted daily scrum meetings as a team lead for one sprint. Designed databases with ER diagrams and implemented them with PostgreSQL. Dockerized applications and uploaded to Docker Hub for public use.
 
 
 ## Education
