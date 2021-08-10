@@ -3,9 +3,9 @@ package ca.jrvs.practice.dataStructure.list;
 public class LinkedJList<E> implements JList<E> {
 
   // head of ll
-  Node head;
-  Node tail;
-  int size;
+  private Node head;
+  private Node tail;
+  private int size;
 
   class Node {
 
@@ -15,6 +15,14 @@ public class LinkedJList<E> implements JList<E> {
     Node(E e) {
       data = e;
       next = null;
+    }
+
+    public E getData() {
+      return data;
+    }
+
+    public Node getNext() {
+      return next;
     }
   }
 
@@ -155,15 +163,21 @@ public class LinkedJList<E> implements JList<E> {
     if (index >= size || index < 0) {
       throw new IndexOutOfBoundsException("Index out of bounds");
     }
-    Node current = head;
-    Node prev = head;
-    for (int i = 0; i < index; i++) {
-      prev = current;
-      current = current.next;
+    if (index == 0) {
+      Node temp = head;
+      head = head.next;
+      return temp.data;
+    } else {
+      Node current = head;
+      Node prev = head;
+      for (int i = 0; i < index; i++) {
+        prev = current;
+        current = current.next;
+      }
+      prev.next = current.next;
+      size--;
+      return (E) current.data;
     }
-    prev.next = current.next;
-    size--;
-    return (E) current;
   }
 
   /**
