@@ -18,7 +18,6 @@ public class TwitterAPITest {
   private static String TOKEN_SECRET = System.getenv("tokenSecret");
 
   public static void main(String[] args) throws Exception {
-
     // setup ouath
     OAuthConsumer consumer = new CommonsHttpOAuthConsumer(CONSUMER_KEY, CONSUMER_SECRET);
     consumer.setTokenWithSecret(ACCESS_TOKEN, TOKEN_SECRET);
@@ -26,19 +25,20 @@ public class TwitterAPITest {
     // create an HTTP GET request
     String status = "today is a good day not";
     PercentEscaper percentEscaper = new PercentEscaper("", false);
-    HttpPost request = new HttpPost("https://api.twitter.com/1.1/statuses/update.json?status=" + percentEscaper.escape(status));
+    HttpPost request = new HttpPost(
+        "https://api.twitter.com/1.1/statuses/update.json?status=" + percentEscaper.escape(status));
 
     // sign the request (add headers)
     consumer.sign(request);
 
     System.out.println("Http Request Headers:");
-    Arrays.stream(request.getAllHeaders()).forEach(System.out::println);;
+    Arrays.stream(request.getAllHeaders()).forEach(System.out::println);
+    ;
 
     // send the request
     HttpClient httpClient = HttpClientBuilder.create().build();
     HttpResponse response = httpClient.execute(request);
     System.out.println(EntityUtils.toString(response.getEntity()));
-
   }
 
 }
