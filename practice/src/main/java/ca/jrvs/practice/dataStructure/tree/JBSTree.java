@@ -166,6 +166,7 @@ public class JBSTree<E> implements JTree<E> {
 
   /**
    * Finds the successor of a given node
+   *
    * @param root
    * @return successor
    */

@@ -13,7 +13,7 @@ public class JBSTreeTest {
     tree.insert(10);
     tree.insert(15);
     tree.insert(5);
-    Node root =  tree.getRoot();
+    Node root = tree.getRoot();
     assertEquals(10, root.getValue());
   }
 
@@ -23,7 +23,7 @@ public class JBSTreeTest {
     tree.insert(10);
     tree.insert(15);
     tree.insert(5);
-    Node root =  tree.getRoot();
+    Node root = tree.getRoot();
     int search1 = tree.search(10);
     int search2 = tree.search(15);
     int search3 = tree.search(5);

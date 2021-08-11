@@ -56,6 +56,7 @@ public interface JTree<E> {
 
   /**
    * traverse through the tree and find out the tree height
+   *
    * @return height
    * @throws NullPointerException if the BST is empty
    */
