@@ -6,6 +6,7 @@ import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.util.TweetUtil;
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 
@@ -19,7 +20,8 @@ public class TwitterDaoIntTest {
     String consumerSecret = System.getenv("consumerSecret");
     String accessToken = System.getenv("accessToken");
     String tokenSecret = System.getenv("tokenSecret");
-    HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
+    HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken,
+        tokenSecret);
     this.dao = new TwitterDao(httpHelper);
   }
 
