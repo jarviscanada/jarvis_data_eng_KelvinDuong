@@ -1,0 +1,110 @@
+# Preferred name (Characters only)
+name: "Kelvin Duong"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_KelvinDuong
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I graduated with a bachelor's degree specializing in Computer Science from the University of Toronto Scarborough. The coursework has exposed me to an extensive set of programming and interpersonal skills. It has also allowed me to develop a strong understanding of data structures and algorithms through practical assessments. I joined Jarvis as a Data Engineer to improve my software development abilities and learn the newest technologies used in the field. I applied my deep knowledge of Computer Science fundamentals to the projects while collaborating with a team in an Agile/Scrum environment. I am passionate about learning new technologies and design patterns that will allow me to grow as a Data Engineer. During my free time, I play competitive videogames and practice on the piano. It helps me build on my communication skills and work well in a team to accomplish a common goal.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Python
+    - C
+    - Linux/Bash
+    - RDBMS/PostgreSQL
+    - Agile/Scrum
+    - Git/SVN
+  # At least 5 skills
+  competent:
+    - JavaScript
+    - HTML/CSS
+    - MongoDB
+    - Docker
+    - Maven
+    - GitFlow
+    - Jira
+    - MySQL
+    - Kanban
+  # At least 5 skills
+  familiar:
+    - Spring
+    - Hibernate
+    - Node.js
+    - Express
+    - Bootstrap
+    - jQuery
+    - Travis CI
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Developed a cluster monitoring system that records hardware specifications and resource usage of each node/server in the system. The script is used by the Jarvis Linux Cluster Administration (LCA) team to monitor and manage their Linux cluster which is currently running on CentOS 7. The data is collected from the host machine every minute using crontab and is stored on a Relational Database Management System using PostgresSQL. Data collected include CPU mode, memory free, disk io, CPU number, etc. A few SQL queries were written to answer basic business questions. The queries can find the average memory used for each host over a specified time interval and detect server failures. Bash scripts are used to create, stop or start the PSQL Docker instance and to insert into the database. Used git as a version control system and followed the GitFlow workflow ideologies to manage branches and features.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: In Progress"
+      - "JDBC App: Developed a JDBC application that creates a connection in the dockerized PostgreSQL database and allows the client to access predefined select queries. Maven was used to compile and build the project with the necessary dependencies."
+      - "Grep App: Developed a Java application that mimics the Linux grep command. The application will recursively check every file in the path for matching lines. JavaGrepImp uses methods from the Reader class in its implementation to read and write to files. JavaGrepLambdaImp extends and improves on the JavaGrepImp class by making use of Lambda functions wherever possible. The application was Dockerized and uploaded to Docker Hub."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "OpenMRS Patient Management Software"
+    #URL is optional
+    git_url:
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Collaborated in a Kanban development environment to develop modules and to patch existing bugs in Java. Created a module that allows for the addition of formularies in the MySQL database that is retrieved using Spring. Coordinated the team's efforts using GitHub, Trello, JIRA and daily stand ups. Modeled the structure and behavior of the existing codebase using class, object, and sequence diagrams.
+  - name: "Toronto East Quadrant - Local Immigration Partnership"
+    git_url:
+    description: Designed MySQL queries that analyzed client service usage and information by merging and retrieving relevant tables. Developed application using JavaScript, HTML and CSS for the front-end and core Java for the back end. Used commonly found design patterns such as factory, singleton, and builder to create maintainable and extensible code. Attended weekly client meetings to discuss design requirements and modifications to the application.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis"
+    duration: "July 2021-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Worked with a team of Data Engineers in an Agile/Scrum development environment to implement projects in Java and Linux/Bash. Conducted daily scrum meetings as a team lead for one sprint. Designed databases with ER diagrams and implemented them with PostgreSQL. Dockerized applications and uploaded to Docker Hub for public use."
+ 
+#List of edcuation
+education: 
+  - school_name: "University of Toronto Scarborough"
+    duration: "2015-2020"
+    degree: "Honours Bachelor of Science"
+    department: "Computer Science Specialist"
+    # optional
+    awards_achievements: 
+
+#Optional section
+others:
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Competitive gaming"
+      - "Piano"
