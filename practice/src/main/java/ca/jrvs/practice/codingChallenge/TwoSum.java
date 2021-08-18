@@ -3,7 +3,6 @@ package ca.jrvs.practice.codingChallenge;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.stream.IntStream;
 
 /**
  * ticket: https://www.notion.so/Two-Sum-abd5b26752a3400582213e95c0a40335
@@ -32,9 +31,8 @@ public class TwoSum {
   }
 
   /**
-   * Big-O: O(n + logn)
-   * Justification: sorting takes logn then one loop of n. operations in the loop
-   * take o(1) time
+   * Big-O: O(nlogn)
+   * Justification: sorting takes nlogn then one loop of n. O(n + nlogn) = O(nlogn)
    */
   public Boolean twoSumSorted(int[] array, int value) {
     int[] temp = Arrays.copyOf(array, array.length);
