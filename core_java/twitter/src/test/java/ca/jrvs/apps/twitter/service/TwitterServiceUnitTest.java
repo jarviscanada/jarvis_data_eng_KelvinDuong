@@ -29,14 +29,14 @@ import org.mockito.junit.MockitoJUnitRunner;
 public class TwitterServiceUnitTest {
 
   @Mock
-  TwitterDao dao;
+  private TwitterDao dao;
 
   @InjectMocks
-  TwitterService service;
+  private TwitterService service;
 
-  String hashtag = "#abc";
-  Double lat = 1d;
-  Double lon = -1d;
+  private String hashtag = "#abc";
+  private Double lat = 1d;
+  private Double lon = -1d;
 
   @Test
   public void postTweet() throws Exception {
