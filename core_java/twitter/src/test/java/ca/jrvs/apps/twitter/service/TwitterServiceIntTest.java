@@ -32,7 +32,6 @@ public class TwitterServiceIntTest {
         tokenSecret);
     this.dao = new TwitterDao(httpHelper);
     this.service = new TwitterService(dao);
-
   }
 
   @Test
