@@ -39,10 +39,10 @@ docker pull kelvin3094/twitter_app
 
 # run with docker
 docker run --rm \
--e consumerKey=API Key \
--e consumerSecret=API Secret Key \
--e accessToken=Access Token \
--e tokenSecret=Access Token Secret \
+-e consumerKey="API Key" \
+-e consumerSecret="API Secret Key" \
+-e accessToken="Access Token" \
+-e tokenSecret="Access Token Secret" \
 Kelvin3094/twitter_app post|show|delete [options]
 ```
 
