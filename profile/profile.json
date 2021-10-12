@@ -29,7 +29,7 @@
     },
     {
       "description": [
-        "Twitter App: In Progress",
+        "Twitter App: Developed a Java application that can post, show, and delete tweets using Twitter REST API. User authenticated with the OAuth internet protocol by setting system environment variables for the corresponding keys. Followed MVC and DAO design patterns to retrieve and send HTTP requests. Integration and unit testing were performed with Junit and Mockito.",
         "JDBC App: Developed a JDBC application that creates a connection in the dockerized PostgreSQL database and allows the client to access predefined select queries. Maven was used to compile and build the project with the necessary dependencies.",
         "Grep App: Developed a Java application that mimics the Linux grep command. The application will recursively check every file in the path for matching lines. JavaGrepImp uses methods from the Reader class in its implementation to read and write to files. JavaGrepLambdaImp extends and improves on the JavaGrepImp class by making use of Lambda functions wherever possible. The application was Dockerized and uploaded to Docker Hub."
       ],
